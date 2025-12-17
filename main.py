@@ -368,28 +368,6 @@ all_sun_data = {
 }
 
 
-# Aflevering i Wiseflow mv.
-# Software: Alle filer med kildekode, og evt. database-filer, skal zippes sammen, og .zip-filen skal navngives på følgende måde: SHG_Projekttitel_Kode.pdf, fx: 1A8_Smartcykel_Kode.zip
-# Udover Wiseflow skal hele programmet uploades til Github repository, eller lignende online versionsstyringsværktøj med link til det i afsnittet med kodebeskrivelse. Husk at tjekke, at der er givet adgang så vejleder(e) kan tilgå det anvendte repository. Husk at fjerne alt kode, som er udkommenteret, eller på anden vis ikke er relevant til eksamen (fjern virtual environment mapper!). Kodestrukturen skal være den samme, som den på de forskellige systemer. Lav eventuelt en mappe til Server, ESP32 enheder og Raspberry Pi eller hvad der ellers indgår.
-
-
-##############################################################################
-# Mit eget overblik over moduler og filer på ESP32                           #
-##############################################################################
-
-# Root:
-# - boot.py (Connection til WIFI)
-# - main.py (Mit program)
-# - secrets.py (til WIFI og Thingsboard)
-# - ina219_lib.py (library til at læse data fra INA219)
-# - mpu6050.py (library til at læse data fra MPU6050)
-# - lht87.py (library til at læse temperatur fra LHT87)
-# - /lib:
-# --- gpio_lcd.py (library til at skrive til LCD)
-# --- lcd_api.py (library, der brugers gpio_lcd.py)
-# --- gps_simple (library til at læse data fra GPS)
-# --- /uthingsboard
-# ------ client.py (library til at kommunikere med Thingsboard)
 
 
 ##############################################################################
